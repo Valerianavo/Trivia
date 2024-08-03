@@ -1,0 +1,130 @@
+body{
+  min-height: 100vh;
+  background-image: url(https://i.pinimg.com/originals/27/c9/3f/27c93feb12d4e0873a66af436be4419b.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat ;
+  max-width: 100%;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container{
+  border-radius: 15px;
+  border: 1px solid black;
+  box-sizing: 0 8px 10px rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  backdrop-filter: blur(55px);
+  margin: 30px auto ;
+  height: 450px;
+  width: 50%;
+
+}
+
+h3.card{
+  border-radius: 15px;
+  border: 1px solid black;
+  box-sizing: 0 8px 10px rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  backdrop-filter: blur(55px);
+  margin: 30px auto ;
+  height: 450px;
+  width: 50%;
+}
+
+.resultado_titulo {
+  color: black;
+  font-size: 50px;
+  padding: 65px;
+}
+
+
+h2.pregunta_nombre {
+  border-radius: 15px 15px 0 0;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.pregunta_enunciado {
+  text-align: center; 
+  margin: 0 auto; 
+  width: 90%; 
+  padding: 10px; 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.pregunta_contenido{
+  padding: 40px
+}
+
+
+.titulo {
+  color: black;
+  font-size: 35px;
+  margin: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.card{
+  height: 450px;
+}
+
+#op1, #op2, #op3, #op4 {
+  background-color: #00FFFF; 
+  color: black; 
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px; 
+}
+
+
+#op1:hover, #op2:hover, #op3:hover, #op4:hover {
+  background-color: #FFA500; 
+  color:white
+}
+
+#op1:active, #op2:active, #op3:active, #op4:active {
+  background-color: #3e8e41;
+}
+
+#barra_progreso{
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botonvolve {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px 10px 20px 10px;
+}
+
+.botonvolve:hover {
+  background-color: #0056b3;
+}
+

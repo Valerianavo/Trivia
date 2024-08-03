@@ -1,0 +1,98 @@
+body{
+    min-height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/27/c9/3f/27c93feb12d4e0873a66af436be4419b.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    max-width: 100%;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.presentacion {
+    border-radius: 15px;
+    border: 1px solid black;
+    box-sizing: 0 8px 10px rgba(0, 0, 0, 0.6);
+    background-color: transparent;
+    backdrop-filter: blur(55px);
+    margin: 30px auto ;
+    height: 450px;
+    width: 50%;
+  
+}
+  
+.marca {
+    border-radius: 15px 15px 0 0;
+    background-color: black;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    color: black;
+}
+
+h2.titulo_marca {
+    font-size: 20px;
+    color: white;
+}
+h2.punto{
+    color: aliceblue;
+    font-size: 30px;
+}
+  
+.container{
+    padding: 90px 10px 0;
+}
+  
+.titulo {
+    color: white;
+    font-size: 35px;
+    margin: 10px;
+}
+  
+.pregunta {
+    display: block;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+}
+ 
+.input {
+    border-radius: 3px;
+    border: 1px solid white;
+    padding: 5px 20px;
+    margin: 10px 0;
+    width: 70%;
+}
+  
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+  
+.boton {
+    border-radius: 20px;
+    border: 3px solid white;
+    font-weight: 800;
+    display: block;
+    padding: 10px 0px 10px 0px;
+    margin: 10px auto;
+    width: 100px;
+    color: aliceblue;
+    background-position: center;
+}
+  
+a{
+    text-decoration: none;
+}
+  
