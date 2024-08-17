@@ -3,7 +3,12 @@ var pregunta = [
     '¿En qué región del Perú se originó el plato conocido como "pachamanca"?',
     '¿Cuál es la festividad que se celebra el 24 de junio en Cusco en honor al dios Sol?',
     '¿Qué escritor peruano ganó el Premio Nobel de Literatura en 2010?',
-    '¿Cuál es la lengua indígena más hablada en Perú después del español?'
+    '¿Cuál es la lengua indígena más hablada en Perú después del español?',
+    '¿Qué importante líder indígena fue conocido como el "último inca"?',
+    '¿Quién fue el primer presidente de Perú tras su independencia de España en 1821?',
+    '¿Qué famoso museo peruano alberga una de las colecciones más grandes de arte precolombino en el mundo?',
+    '¿En qué región de Perú se encuentran los geoglifos de Palpa, que también forman parte del Patrimonio de la Humanidad por la UNESCO?',
+    '¿Qué importante santuario histórico en el departamento de Lima fue sede de una de las batallas más significativas en la independencia del Perú?'
 ];
 
 var opciones = [
@@ -26,15 +31,40 @@ var opciones = [
     ['Aimara',
     'Quechua',
     'Asháninka',
-    'Shipibo-Konibo']
+    'Shipibo-Konibo'],
+    ['Túpac Amaru',
+    'Jose Gabriel Condorcanqui',
+    'Túpac Amaru II',
+    'Francisco Amaru'],
+    ['Nicolás de Piérola',
+    'José de la Riva-Agüero y Sánchez Boquete',
+    'Augusto Leguía',
+    'Ramón Castilla'],
+    ['El Museo Larco en Lima',
+    'Museo Nacional de la Cultura Peruana',
+    'Museo de Arte de Lima',
+    'Museo Oro del Peru'],
+    ['Paracas',
+    'Nazca',
+    'Arequipa',
+    'Ica'],
+    ['Santuario Histórico de Chacamarca',
+    'El Santuario de Pachacámac',
+    'Santuario Nacional Cordillera de Colán',
+    'Santuario Nacional Los Manglares de Tumbes']
 ];
 
 var puntajePorOpcion = [
-    [0,0,4,0],
-    [0,4,0,0],
-    [0,0,4,0],
-    [0,0,0,4],
-    [0,4,0,0]
+    [0,0,2,0],
+    [0,2,0,0],
+    [0,0,2,0],
+    [0,0,0,2],
+    [0,2,0,0],
+    [0,0,2,0],
+    [0,2,0,0],
+    [2,0,0,0],
+    [0,0,0,2],
+    [0,2,0,0],
 ];
 
 var puntaje = 0;
@@ -46,7 +76,7 @@ function mostrarResultado() {
 
     document.getElementById("barra_progreso").value = i * 100 / (pregunta.length - 1);
     div.innerHTML += '<h3 class="resultado_titulo">¡Fin del juego! Puntaje final:</h3>'
-    div.innerHTML += `<p>Tu puntaje es de ${puntaje} puntos</p>`
+    div.innerHTML += `<p> ${puntaje} puntos</p>`
     div.innerHTML += '<a class="botonvolve" href="segundo.html">Jugar de nuevo</a>'
     div.innerHTML += '<a class="botonvolve" href="primero.html">Volver al inicio</a>'
 }
@@ -70,6 +100,12 @@ function siguientePregunta() {
     document.getElementById("op2").innerHTML = opciones[i][1];
     document.getElementById("op3").innerHTML = opciones[i][2];
     document.getElementById("op4").innerHTML = opciones[i][3];
+    document.getElementById("op5").innerHTML = opciones[i][4];
+    document.getElementById("op6").innerHTML = opciones[i][5];
+    document.getElementById("op7").innerHTML = opciones[i][6];
+    document.getElementById("op8").innerHTML = opciones[i][7];
+    document.getElementById("op9").innerHTML = opciones[i][8];
+    document.getElementById("op10").innerHTML = opciones[i][9];
     document.getElementById("barra_progreso").value = i * 100 / pregunta.length;
 }
 
@@ -87,4 +123,21 @@ document.getElementById("op3").addEventListener("click", function() {
 document.getElementById("op4").addEventListener("click", function() {
     actualizarPuntaje(4)
 })
-
+document.getElementById("op5").addEventListener("click", function() {
+    actualizarPuntaje(5)
+})
+document.getElementById("op6").addEventListener("click", function() {
+    actualizarPuntaje(6)
+})
+document.getElementById("op7").addEventListener("click", function() {
+    actualizarPuntaje(7)
+})
+document.getElementById("op8").addEventListener("click", function() {
+    actualizarPuntaje(8)
+})
+document.getElementById("op9").addEventListener("click", function() {
+    actualizarPuntaje(9)
+})
+document.getElementById("op10").addEventListener("click", function() {
+    actualizarPuntaje(10)
+})

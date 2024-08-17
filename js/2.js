@@ -47,7 +47,7 @@ function mostrarResultado() {
 
     document.getElementById("barra_progreso").value = i * 100 / (pregunta.length - 1);
     div.innerHTML += "<h3 class='resultado_titulo'>¡Fin del juego! Puntaje final:</h3>"
-    div.innerHTML += `<p>Tu puntaje es de ${puntaje} puntos</p>`
+    div.innerHTML += `<p>${puntaje} puntos</p>`
     div.innerHTML += "<a class='botonvolve' href='segundo.html'>Jugar de nuevo</a>"
 }
 
@@ -70,6 +70,7 @@ function siguientePregunta() {
     document.getElementById("op2").innerHTML = opciones[i][1];
     document.getElementById("op3").innerHTML = opciones[i][2];
     document.getElementById("op4").innerHTML = opciones[i][3];
+    document.getElementById("op5").innerHTML = opciones[i][4];
     document.getElementById("barra_progreso").value = i * 100 / pregunta.length;
 }
 
@@ -87,4 +88,6 @@ document.getElementById("op3").addEventListener("click", function() {
 document.getElementById("op4").addEventListener("click", function() {
     actualizarPuntaje(4)
 })
-
+document.getElementById("op5").addEventListener("click", function() {
+    actualizarPuntaje(5)
+})
