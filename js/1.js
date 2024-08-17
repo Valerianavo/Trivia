@@ -78,7 +78,7 @@ function mostrarResultado() {
     div.innerHTML += '<h3 class="resultado_titulo">¡Fin del juego! Puntaje final:</h3>'
     div.innerHTML += `<p> ${puntaje} puntos</p>`
     div.innerHTML += '<a class="botonvolve" href="segundo.html">Jugar de nuevo</a>'
-    div.innerHTML += '<a class="botonvolve" href="primero.html">Volver al inicio</a>'
+    div.innerHTML += '<a class="botonvolve" href="index.html">Volver al inicio</a>'
 }
 
 
