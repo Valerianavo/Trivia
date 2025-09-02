@@ -1,0 +1,110 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(135deg, #b71c1c, #fbc02d, #2e7d32);
+  overflow: hidden;
+}
+
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.presentacion {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+  z-index: 1; 
+}
+
+.marca {
+  background: #b71c1c; 
+  padding: 15px;
+}
+.titulo_marca {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+  color: #fff;
+}
+
+.container {
+  padding: 20px;
+}
+
+.titulo {
+  margin: 0;
+  color: #fdd835; 
+  font-size: 32px;
+}
+
+.pregunta {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff; 
+}
+
+.pregunta2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #81c784;
+  margin-bottom: 20px;
+}
+
+.inicio label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.inicio input {
+  border-radius: 8px;
+  border: 2px solid #fbc02d;
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+.boton {
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  padding: 12px 30px;
+  background: #d32f2f;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 5px;
+}
+.boton:hover {
+  background: #fbc02d;
+  color: #000;
+}
+
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}

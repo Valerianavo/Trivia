@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raices Peruanas</title>
-    <link href="css/primero.css" rel="stylesheet" </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíces Peruanas</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Fuente Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="presentacion">
+    
+    <!-- Encabezado -->
+    <div class="marca">
+      <h2 class="titulo_marca">🇵🇪 Raíces Peruanas</h2>
+    </div>
 
-    <body>
-        <div class="presentacion">
-            <div class="marca">
-                <h2 class="titulo_marca">Raíces Peruanas</h2>
-            </div>
-            <div class="container">
-                <h1 class="titulo">PONTE A PRUEBA</h1>
-                <p class="pregunta">
-                    ¿Cuánto conoces sobre historia y cultura de nuestro país?
-                </p>
-                <p class="pregunta2">
-                    ¡Desafíate y pon a prueba tus conocimientos!
-                </p>
-                <br>
-                <a href="segundo.html" id="button" class="boton">Continuar</a>
-            </div>
-        </div>
-    </body>
+    <!-- Contenido central -->
+    <div class="container">
+      <h1 class="titulo">¡PONTE A PRUEBA!</h1>
+      <p class="pregunta">¿Cuánto conoces sobre historia, cultura, gastronomía y geografía del Perú?</p>
+      <p class="pregunta2">🌞 Demuestra tu conocimiento y alcanza el puntaje más alto.</p>
+
+      <!-- Formulario de inicio -->
+      <div class="inicio">
+        <label for="nombreJugador">Ingresa tu nombre:</label>
+        <input type="text" id="nombreJugador" placeholder="Tu nombre aquí">
+        <button type="button" id="iniciarBtn" class="boton">Comenzar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("iniciarBtn").addEventListener("click", () => {
+      const nombre = document.getElementById("nombreJugador").value.trim();
+      if(nombre) {
+        localStorage.setItem("jugador", nombre);
+        window.location.href = "categorias.html"; 
+      } else {
+        alert("Por favor, ingresa tu nombre para continuar.");
+      }
+    });
+  </script>
+</body>
 </html>
