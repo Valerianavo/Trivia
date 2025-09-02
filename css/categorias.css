@@ -95,15 +95,13 @@ body::before {
 .historia { border-left: 6px solid #2196f3; }
 .geografia { border-left: 6px solid #4caf50; }
 
-.footer {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 14px;
-  color: #ddd;
-}
+
 
 /* Animación */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px);}
   to { opacity: 1; transform: translateY(0);}
 }
+
+
+/* categorias cultura, geografia e historia */

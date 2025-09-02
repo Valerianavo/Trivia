@@ -1,0 +1,102 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(135deg, #b71c1c, #fbc02d, #2e7d32);
+  overflow: hidden;
+}
+
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.presentacion {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+  z-index: 1; 
+  padding: 20px;
+}
+
+
+.marca {
+  background: #b71c1c; 
+  padding: 15px;
+}
+.titulo_marca {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+  color: #fff;
+}
+
+
+#tituloCategoria {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #444;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.boton {
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* Colores de botones por nivel */
+#facil {
+  background: #2ecc71; /* Verde */
+}
+#facil:hover {
+  background: #27ae60;
+  transform: scale(1.05);
+}
+
+#intermedio {
+  background: #f39c12; /* Naranja */
+}
+#intermedio:hover {
+  background: #d35400;
+  transform: scale(1.05);
+}
+
+#dificil {
+  background: #e74c3c; /* Rojo */
+}
+#dificil:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}

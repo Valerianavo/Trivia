@@ -20,7 +20,7 @@
     <div class="container">
       <h1 class="titulo">¡PONTE A PRUEBA!</h1>
       <p class="pregunta">¿Cuánto conoces sobre historia, cultura, gastronomía y geografía del Perú?</p>
-      <p class="pregunta2">🌞 Demuestra tu conocimiento y alcanza el puntaje más alto.</p>
+      <p class="pregunta2">Demuestra tu conocimiento y alcanza el puntaje más alto.</p>
 
       <!-- Formulario de inicio -->
       <div class="inicio">
@@ -30,17 +30,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-    document.getElementById("iniciarBtn").addEventListener("click", () => {
-      const nombre = document.getElementById("nombreJugador").value.trim();
-      if(nombre) {
-        localStorage.setItem("jugador", nombre);
-        window.location.href = "categorias.html"; 
-      } else {
-        alert("Por favor, ingresa tu nombre para continuar.");
-      }
-    });
-  </script>
+  <script src="/js/script.js"></script>
 </body>
 </html>
