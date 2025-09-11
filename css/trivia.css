@@ -1,0 +1,120 @@
+/* ---- Reset y base ---- */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fff8e1, #ffeaa7);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ---- Contenedor principal ---- */
+.presentacion {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 650px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ---- Marca ---- */
+.titulo_marca {
+  color: #d63031; /* rojo bandera */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* ---- Título de trivia ---- */
+#tituloTrivia {
+  color: #2d3436;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ---- Pregunta ---- */
+.pregunta {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #fff9c4; /* amarillo suave */
+  border-radius: 12px;
+  text-align: left;
+  border: 2px solid #fdcb6e;
+}
+
+.pregunta p {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+}
+
+/* ---- Opciones ---- */
+.opcion {
+  display: block;
+  background: #ffffff;
+  border: 2px solid #ffeaa7;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  margin: 0.4rem 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.opcion:hover {
+  background: #fdcb6e;
+  border-color: #ffcc00;
+}
+
+.opcion input {
+  margin-right: 10px;
+}
+
+/* ---- Botones ---- */
+button {
+  padding: 12px 22px;
+  margin: 0.8rem 0.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Botón siguiente */
+#siguienteBtn {
+  background: #d63031; /* rojo */
+}
+#siguienteBtn:hover {
+  background: #b71c1c;
+}
+
+/* Botón finalizar */
+#finalizarBtn {
+  background: #ffcc00; /* amarillo bandera */
+  color: #2d3436;
+}
+#finalizarBtn:hover {
+  background: #e6b800;
+  color: #000;
+}
+
+/* ---- Resultado ---- */
+.resultado_titulo {
+  font-size: 1.6rem;
+  color: #d63031;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* ---- Animaciones ---- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
