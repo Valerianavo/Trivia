@@ -48,7 +48,7 @@ function mostrarPregunta() {
   const q = seleccion[indice];
   contenedor.innerHTML = `
     <div class="pregunta">
-      <p><strong>${indice + 1}. ${q.pregunta}</strong></p>
+      <p class="pPregunta"><strong>${indice + 1}. ${q.pregunta}</strong></p>
       ${q.opciones.map(op => `
         <label class="opcion">
           <input type="radio" name="pregunta" value="${op}">

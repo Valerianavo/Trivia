@@ -1,120 +1,76 @@
-/* ---- Reset y base ---- */
 body {
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #fff8e1, #ffeaa7);
+  min-height: 100vh;
   margin: 0;
-  padding: 0;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  position: relative;
+  background: linear-gradient(135deg, #b71c1c, #fbc02d, #2e7d32);
+  overflow: hidden;
 }
 
-/* ---- Contenedor principal ---- */
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
 .presentacion {
-  background: #ffffff;
-  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(20px); */
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-  text-align: center;
+  overflow: hidden;
   width: 90%;
-  max-width: 650px;
-  animation: fadeIn 0.8s ease-in-out;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+  z-index: 1; 
 }
 
-/* ---- Marca ---- */
+
+.marca {
+  background: #b71c1c; 
+  padding: 15px;
+}
 .titulo_marca {
-  color: #d63031; /* rojo bandera */
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-/* ---- Título de trivia ---- */
-#tituloTrivia {
-  color: #2d3436;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-/* ---- Pregunta ---- */
-.pregunta {
-  margin: 1rem 0;
-  padding: 1rem;
-  background: #fff9c4; /* amarillo suave */
-  border-radius: 12px;
-  text-align: left;
-  border: 2px solid #fdcb6e;
-}
-
-.pregunta p {
-  font-weight: bold;
-  margin-bottom: 0.8rem;
-  color: #2c3e50;
-}
-
-/* ---- Opciones ---- */
-.opcion {
-  display: block;
-  background: #ffffff;
-  border: 2px solid #ffeaa7;
-  border-radius: 10px;
-  padding: 0.6rem 1rem;
-  margin: 0.4rem 0;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.opcion:hover {
-  background: #fdcb6e;
-  border-color: #ffcc00;
-}
-
-.opcion input {
-  margin-right: 10px;
-}
-
-/* ---- Botones ---- */
-button {
-  padding: 12px 22px;
-  margin: 0.8rem 0.5rem;
-  border: none;
-  border-radius: 12px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
   color: #fff;
 }
 
-/* Botón siguiente */
-#siguienteBtn {
-  background: #d63031; /* rojo */
+#tituloTrivia{
+    color: #444;
 }
-#siguienteBtn:hover {
-  background: #b71c1c;
-}
-
-/* Botón finalizar */
-#finalizarBtn {
-  background: #ffcc00; /* amarillo bandera */
-  color: #2d3436;
-}
-#finalizarBtn:hover {
-  background: #e6b800;
-  color: #000;
+.pPregunta {
+    color: #666;
 }
 
-/* ---- Resultado ---- */
-.resultado_titulo {
-  font-size: 1.6rem;
-  color: #d63031;
-  margin-top: 1rem;
-  font-weight: bold;
+.opcion {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(220, 239, 255);
+  display: block;
+  margin: 20px 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
 }
 
-/* ---- Animaciones ---- */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+input[type="radio"] {
+    display: none;
+}
+
+#siguienteBtn, #finalizarBtn {
+    margin: 15px 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    float: right;
 }
